@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@font-face {
+  font-family: bebas;
+  src: url("/font/Bebas-Regular.ttf"); }
+
+@font-face {
+  font-family: Bright_European;
+  src: url("/font/Bridge Type - UEFA Euro 2020.ttf"); }
+
+@font-face {
+  font-family: Caviar;
+  src: url("/font/CaviarDreams.ttf"); }
+
+@font-face {
+  font-family: CaviarBold;
+  src: url("/font/Caviar_Dreams_Bold.ttf"); }
+
+@font-face {
+  font-family: LobsterTwoBold;
+  src: url("/font/LobsterTwo-Bold.otf"); }
+
+@font-face {
+  font-family: Dubai;
+  src: url("/font/DubaiSummer.otf"); }
+
+@keyframes animation1 {
+  0% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1.25);
+    border: .1rem solid orange; }
+  100% {
+    transform: scale(1.25);
+    border: 0;
+    opacity: 0; } }
+
+@keyframes animation2 {
+  to {
+    transform: scaleX(1.25) translateY(0.5rem);
+    color: rgba(51, 51, 51, 0.6); } }
+
+@keyframes animation3 {
+  from {
+    background-position: 50% 0%; }
+  to {
+    background-position: 50% 100%; } }
+
+@keyframes animation4 {
+  to {
+    transform: rotateZ(360deg); } }
+
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: black; }
+
+::placeholder {
+  /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+  color: orange;
+  font-family: Calibri;
+  font-size: 1.5rem;
+  opacity: .8;
+  /* Firefox */ }
+
+#form-login {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 10rem;
+  position: relative; }
+  #form-login #dog-login-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: saturate(4) blur(0.3rem); }
+  #form-login .login {
+    width: 30%;
+    height: 25rem;
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(51, 51, 51, 0.3);
+    border-radius: .5rem;
+    box-shadow: 0 0 0.2rem #333, 0 0 0.3rem #5a5a5a, 0 0 0.4rem #9b9b9b, 0 0 0.5rem #cecece; }
+    #form-login .login .login_title {
+      width: 100%;
+      height: 15%;
+      text-align: center;
+      line-height: 3rem;
+      font-family: Bright_European;
+      font-size: 3.5rem;
+      letter-spacing: .3rem;
+      padding-top: 1rem; }
+    #form-login .login .login-input {
+      width: 100%; }
+    #form-login .login .login-input-text {
+      height: 55%;
+      padding-top: 2rem; }
+      #form-login .login .login-input-text .login-input_content {
+        width: 80%;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin: 0 auto;
+        border: .2rem solid orange;
+        margin-top: 1rem;
+        border-radius: .5rem; }
+        #form-login .login .login-input-text .login-input_content input {
+          width: 90%;
+          height: 60%;
+          background: none;
+          outline: none;
+          border-right: .1rem;
+          padding: 0 .5rem;
+          font-size: 1.25rem;
+          color: orange; }
+        #form-login .login .login-input-text .login-input_content i {
+          width: 8%;
+          display: inline-block;
+          font-size: 1.25rem;
+          color: orange; }
+      #form-login .login .login-input-text .login_err {
+        width: 80%;
+        height: 2rem;
+        line-height: 2rem;
+        margin: 0 auto; }
+    #form-login .login .login-input-submit {
+      width: 70%;
+      height: 30%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding-top: .5rem; }
+      #form-login .login .login-input-submit .login-input_btn {
+        width: 45%;
+        height: 3rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: .5rem;
+        background-color: #333;
+        border-radius: 1rem;
+        color: orange;
+        transition: .25s;
+        cursor: pointer; }
+      #form-login .login .login-input-submit .login-input_btn:hover {
+        width: 65%;
+        transform: scaleY(1.1);
+        letter-spacing: .3rem; }

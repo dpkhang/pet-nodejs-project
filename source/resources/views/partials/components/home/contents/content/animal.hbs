@@ -1,0 +1,13 @@
+{{#each this}}
+    <div class="content-box_component_sub_element">
+        <div class="img">
+            <img src="{{this.image}}" alt="">
+        </div>
+        <div class="content">
+            <p>{{this.petname}}</p>
+            <p>{{this.describe}}</p>
+            <p>{{this.color}}</p>
+            <a href="" >${{this.price}}</a>
+        </div>
+    </div>
+{{/each}}

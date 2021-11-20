@@ -1,0 +1,23 @@
+<form id="form-login" action="login/login-user" method="POST" >
+    <img id="dog-login-background" src="/img/background/dog-login.jpg" alt="">
+    <div class="login">
+        <h1 class="login_title">LOGIN</h1>
+        <div class="login-input login-input-text">
+            <div class="login-input_content login-input_content-username">
+                <input type="text" name="username" placeholder="Username">
+                <i class="fas fa-user"></i>
+            </div>
+            <p class="login_err login_err-username"></p>
+            <div class="login-input_content login-input_content-password">
+                <input type="password" name="password" placeholder="Password">
+                <i class="fas fa-unlock-alt"></i>
+            </div>
+            <p class="login_err login_err-password"></p>
+        </div>
+        <div class="login-input login-input-submit">
+            <input type="submit" value="LOGIN" class="login-input_btn">
+            <input type="button" value="CANCEL" class="login-input_btn login-input_btn-cancel">
+        </div>
+    </div>
+</form>
+<script src="/js/login.js"></script>

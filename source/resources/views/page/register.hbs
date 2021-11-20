@@ -1,0 +1,53 @@
+<form id="form-register" action="register/add" method="post" enctype="multipart/form-data" onsubmit="return checkSubmit();">
+    <img id="dog-login-background" src="/img/background/dog-login.jpg" alt="">
+    <div class="register">
+        <p class="register-title">REGISTER</p>
+        <div class="register-box register-box-1">
+            <div class="register-box_element register-box_element-username">
+                <input type="text" name="username" placeholder="Username*"/>
+                <p class="register-box_element-error register-box_element-error-username"></p>
+            </div>
+            <div class="register-box_element register-box_element-password">
+                <input type="password" name="password" placeholder="Password*"/>
+                <p class="register-box_element-error register-box_element-error-password"></p>
+            </div>
+            <div class="register-box_element register-box_element-reenter">
+                <input type="password" name="re-password" placeholder="Re-enter Password*"/>
+                <p class="register-box_element-error register-box_element-error-re_password"></p>
+            </div>
+            <div class="register-box_element register-box_element-email">
+                <input type="text" name="email" placeholder="Email*"/>
+                <p class="register-box_element-error register-box_element-error-email"></p>
+            </div>
+        </div>
+        <div class="register-box register-box-2">
+            <div class="register-box_element register-box_element-img">
+                <div id="file">
+                    <p>
+                        <img src="/img/icons/add-avatar.png" alt="">
+                        <span>Avatar</span>
+                    </p>
+                    <input type="file" name="avatar" />
+                </div>
+            </div>
+            <div class="register-box_element register-box_element-fullname">
+                <div>
+                    <input type="text" name="firstname" placeholder="Firstname"/>
+                    <input type="text" name="lastname" placeholder="Lastname"/>
+                </div>
+                <p class="register-box_element-error"></p>
+            </div>
+            <div class="register-box_element register-box_element-age">
+                <input type="text" name="age" placeholder="Age"/>
+                <p class="register-box_element-error"></p>
+            </div>
+        </div>
+        <div class="register-box register-box-3">
+            <div class="register-box_content">
+                <input type="submit" value="Register">
+                <input type="button" value="Cancel" id="cancel">
+            </div>
+        </div>
+    </div>
+</form>
+<script src="/js/register.js"></script>

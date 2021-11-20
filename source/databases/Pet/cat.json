@@ -1,0 +1,29 @@
+[
+{
+    "petname": "Balinese-Javanese Cat",
+    "type": "Cat",
+    "amount": 15,
+    "image":"/img/img_sources/cat/cat5.jpg",
+    "price": 2900000,
+    "describe": "The Balinese-Javanese is a hearty and healthy breed.",
+    "color":"Balinese - seal point, chocolate point, blue point and lilac point."
+},
+{
+    "petname": "Bengal Cat",
+    "type": "Cat",
+    "amount": 23,
+    "image":"/img/img_sources/cat/cat6.jpg",
+    "price": 3200000,
+    "describe": "Bengal Cats are curious and confident with the tameness of a domestic tabby and the beauty of an Asian Leopard Cat.",
+    "color":"Bright orange to light brown."
+},
+{
+    "petname": "American Wirehair Cat Cat",
+    "type": "Cat",
+    "amount": 56,
+    "image":"/img/img_sources/cat/cat7.jpg",
+    "price": 4500000,
+    "describe": "the American Wirehair is an American original, with a completely unique wired coat.",
+    "color":"Average, considered moderately talkative and an enthusiastic purrer."
+}
+]

@@ -1,0 +1,56 @@
+[
+{
+    "petname": "American Eskimo Dog",
+    "type": "Dog",
+    "amount": 34,
+    "image":"/img/img_sources/dog/dog2.jpg",
+    "price": 6500000,
+    "describe": "The American Eskimo Dog, which descended from European spitz-type dogs, was brought to the U.S.",
+    "color":"White or white with biscuit cream."
+},
+{
+    "petname": "Australian Terrier Dog",
+    "type": "Dog",
+    "amount": 23,
+    "image":"/img/img_sources/dog/dog1.jpg",
+    "price": 5200000,
+    "describe": "The Australian Terrier is a spirited, alert and self-assured dog bred in Australia to control vermin population and guard livestock.",
+    "color":"Blue-and-tan, solid sandy or solid red."
+},
+{
+    "petname": "Bearded Collie Dog",
+    "type": "Dog",
+    "amount": 16,
+    "image":"/img/img_sources/dog/dog3.jpg",
+    "price": 7800000,
+    "describe": "One of Britain’s oldest breeds, the Bearded Collie is a strong, agile herding dog with a shaggy coat.",
+    "color":"Black, blue and fawn, usually with white markings."
+},
+{
+    "petname": "Bedlington Terrier Dog",
+    "type": "Dog",
+    "amount": 44,
+    "image":"/img/img_sources/dog4/dog4.jpg",
+    "price": 3560000,
+    "describe": "A hardy breed known for his curly, woolly coat, the Bedlington Terrier was developed in 19th-century England to catch vermin.",
+    "color":"Blue, sandy, liver, blue-and-tan, sandy-and-tan, or liver-and-tan."
+},
+{
+    "petname": "Bichon Frise Dog",
+    "type": "Dog",
+    "amount": 35,
+    "image":"/img/img_sources/dog/dog5.jpg",
+    "price": 9830000,
+    "describe": "The Bichon Frise breed packs an incredible amount of personality into a small but sturdy body.",
+    "color":"White and may have shadings of buff, cream or apricot around the ears or on the body."
+},
+{
+    "petname": "Coton de Tulear Dog",
+    "type": "Dog",
+    "amount": 56,
+    "image":"/img/img_sources/dog/dog6.jpg",
+    "price": 4500000,
+    "describe": "Characterized by his fluffy, cottonlike coat, the Coton de Tulear is a bright and charming little dog.",
+    "color":"White."
+}
+]

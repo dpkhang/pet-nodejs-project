@@ -1,0 +1,22 @@
+<div id="wrap">
+    <div class="header">
+        <canvas id="first-background-canvas"></canvas>
+        <div class="first-background">
+            <img id="first-background-moon" src="/img/background/moon.svg" alt="">
+            <img id="first-background-cat" src="/img/background/cat.svg" alt="">
+        </div>
+        {{> components/home/header }}
+        <div class="next">
+            <i class="fas fa-angle-double-down next_icon"></i>
+        </div>
+    </div>
+    <svg id="home-svg">
+        <path d="" stroke-width="5" >
+    </svg>
+    <div class="container">
+        {{> components/home/content }}
+    </div>
+    <div class="footer">
+        {{> components/home/footer }}
+    </div>
+<script src="/js/home.js"></script>

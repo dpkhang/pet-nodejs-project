@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@font-face {
+  font-family: bebas;
+  src: url("/font/Bebas-Regular.ttf"); }
+
+@font-face {
+  font-family: Bright_European;
+  src: url("/font/Bridge Type - UEFA Euro 2020.ttf"); }
+
+@font-face {
+  font-family: Caviar;
+  src: url("/font/CaviarDreams.ttf"); }
+
+@font-face {
+  font-family: CaviarBold;
+  src: url("/font/Caviar_Dreams_Bold.ttf"); }
+
+@font-face {
+  font-family: LobsterTwoBold;
+  src: url("/font/LobsterTwo-Bold.otf"); }
+
+@font-face {
+  font-family: Dubai;
+  src: url("/font/DubaiSummer.otf"); }
+
+@keyframes animation1 {
+  0% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1.25);
+    border: .1rem solid orange; }
+  100% {
+    transform: scale(1.25);
+    border: 0;
+    opacity: 0; } }
+
+@keyframes animation2 {
+  to {
+    transform: scaleX(1.25) translateY(0.5rem);
+    color: rgba(51, 51, 51, 0.6); } }
+
+@keyframes animation3 {
+  from {
+    background-position: 50% 0%; }
+  to {
+    background-position: 50% 100%; } }
+
+@keyframes animation4 {
+  to {
+    transform: rotateZ(360deg); } }
+
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: black; }
+
+::placeholder {
+  /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+  color: orange;
+  font-family: Calibri;
+  font-size: 1.5rem;
+  opacity: .8;
+  /* Firefox */ }
+
+.content {
+  width: 100%;
+  height: 100%; }
+  .content .content__profile {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #f39191; }
+    .content .content__profile .content__profile_sub-background {
+      width: 25%;
+      float: left; }
+      .content .content__profile .content__profile_sub-background .background {
+        width: 100%;
+        height: 30rem;
+        background-color: orange; }
+      .content .content__profile .content__profile_sub-background .menu {
+        width: 100%;
+        height: 15rem;
+        margin-top: 1rem; }
+        .content .content__profile .content__profile_sub-background .menu ul {
+          width: 100%;
+          height: 100%; }
+          .content .content__profile .content__profile_sub-background .menu ul li {
+            width: 100%;
+            height: 25%;
+            margin: .35rem 0;
+            transition: .25s; }
+            .content .content__profile .content__profile_sub-background .menu ul li a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              padding-left: 1rem;
+              line-height: 3.75rem;
+              font-size: 1.75rem;
+              font-family: Caviar;
+              font-weight: bold;
+              transition: .25s;
+              border-left: .5rem solid orange;
+              cursor: pointer; }
+          .content .content__profile .content__profile_sub-background .menu ul li:hover a {
+            color: orange;
+            border-color: #333; }
+    .content .content__profile .content__profile_sub-content {
+      width: 73%;
+      float: right; }
+      .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 {
+        width: 120%;
+        height: 20rem;
+        position: relative;
+        transform: translate(-18%, 4rem); }
+        .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 .main-1 {
+          width: 30%;
+          float: left;
+          height: 100%;
+          border-radius: 50%;
+          position: relative; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 .main-1 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; }
+        .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 .main-1:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 110%;
+          height: 110%;
+          border: .20rem dashed orange;
+          transform: translate(-5%, -5%);
+          border-radius: 50%; }
+        .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 .main-2 {
+          width: 68%;
+          height: 100%;
+          float: right;
+          padding-left: 2rem;
+          padding-top: 4rem; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 .main-2 p {
+            width: 100%;
+            height: 5rem;
+            margin-left: 1rem;
+            color: #333; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 .main-2 p:first-child {
+            font-size: 5rem;
+            height: 6rem;
+            font-weight: bold;
+            font-family: Dubai; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 .main-2 p:nth-child(2) {
+            border-top: .2rem solid orange;
+            width: 102.25%;
+            height: 1rem;
+            margin-left: 0; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-1 .main-2 p:last-child {
+            font-size: 2rem;
+            font-family: Dubai; }
+      .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 {
+        width: 80%;
+        float: right;
+        margin-top: -1rem;
+        padding-left: 2rem;
+        position: relative; }
+        .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .content__profile_sub_block_main {
+          width: 90%;
+          margin: 0 auto;
+          position: absolute;
+          left: 5rem;
+          top: 0; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .content__profile_sub_block_main > p {
+            font-size: 2.25rem;
+            height: 3rem;
+            font-weight: bold;
+            font-family: Dubai;
+            line-height: 3.5rem;
+            padding-left: 1rem;
+            margin-left: -2rem;
+            transform: translateY(-1rem);
+            color: orange;
+            border-left: .5rem solid orange; }
+        .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .content__profile_sub_block_main-profile table {
+          width: 100%;
+          height: 100%; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .content__profile_sub_block_main-profile table tr {
+            width: 100%;
+            height: 3rem; }
+            .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .content__profile_sub_block_main-profile table tr td {
+              width: 65%;
+              height: 100%;
+              font-size: 1.5rem;
+              font-family: Arial, Helvetica, sans-serif; }
+            .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .content__profile_sub_block_main-profile table tr th {
+              font-size: 2rem;
+              text-align: start;
+              width: 33%;
+              height: 100%;
+              font-family: Arial, Helvetica, sans-serif; }
+              .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .content__profile_sub_block_main-profile table tr th a {
+                width: 13rem;
+                height: 3rem;
+                margin-top: 2rem;
+                margin-right: 2rem;
+                line-height: 3rem;
+                font-size: 1.4rem;
+                display: block;
+                border: .15rem solid orange;
+                text-align: center;
+                border-radius: .75rem;
+                background-color: rgba(51, 51, 51, 0.8);
+                color: orange;
+                font-family: Dubai;
+                cursor: pointer; }
+        .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .change-password .change-password__content {
+          width: 60%;
+          height: 5rem;
+          margin-top: 1.5rem; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .change-password .change-password__content p {
+            width: 100%;
+            height: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.25rem; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .change-password .change-password__content .input {
+            width: 100%;
+            height: 3rem;
+            border-radius: .5rem;
+            border: .15rem solid orange;
+            text-align: center; }
+            .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .change-password .change-password__content .input input {
+              width: 90%;
+              height: 100%;
+              font-size: 1.2rem;
+              outline: none;
+              background: none; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .change-password .change-password__content .error {
+            display: block;
+            margin-top: .25rem;
+            margin-left: 1rem;
+            font-weight: bold;
+            color: orange; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .change-password .change-password__content .change-password__content_element {
+            cursor: pointer;
+            width: 8rem;
+            height: 3rem;
+            margin: 1rem;
+            font-family: Dubai;
+            font-size: 1.5rem;
+            line-height: 3.5rem;
+            border-radius: .5rem;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: orange;
+            transition: .25s;
+            font-weight: bold; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .change-password .change-password__content .change-password__content_element:hover {
+            letter-spacing: 0.2rem; }
+          .content .content__profile .content__profile_sub-content .content__profile_sub_block-2 .change-password .change-password__content input[type='submit'] {
+            margin-left: 2rem; }

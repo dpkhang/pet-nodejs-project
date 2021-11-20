@@ -1,0 +1,80 @@
+
+<div class="content-box">
+    <div class="content-box_component content-box_component-menu">
+        <div class="content-box_component-menu_element">
+            <ul>
+                <li>
+                <a href="#block-pet">PETS</a>
+                </li>
+                <li>
+                    <a href="#block-foods">PET'S FOODS</a>
+                </li>
+                <li>
+                    <a href="#block-products">PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="#block-introduce">INTRODUCE</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-box-component content-box-component-background">
+        <img src="/img/img_sources/cat/cat1.png" alt="">
+        <img src="/img/img_sources/dog/dog1.png" id="content-box-component-img-dog" alt="">
+    </div>
+    <div class="content-box_component content-box_component-main">
+        <div class="content-box_component_sub content-box_component_sub-1">
+            <div class="component_sub-1 component_sub-1-cat">
+                <div class="img">
+                    <img src="img/icons/cat/102.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Pets Store is Welcome!</p>
+                    <p>Pets Store bring for you lots of different animals.</p>
+                    <p>You can choose the animals for yourself.</p>
+                    <p>Beside that, Pets Store provide many foods for your animals.</p>
+                    <p>We promise you will be interested when you arrive with us.</p>
+                </div>    
+            </div>
+            <div class="component_sub-1 component_sub-1-dog">
+               <div class="img">
+                    <img src="img/icons/dog/image.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <p>You can research information animals.</p>
+                    <p>Will be discount for you!</p>                
+                    <p>Pets Store will be chose the best for you.</p>
+                    <p>Trust me, please!</p>
+                    <p>You can contact with us by phone number 0939305459.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-box_component_sub content-box_component_sub-2">
+            <div class="block">
+                <p id="block-pet" class="content-box_component_sub_title">CATS</p>
+                <span></span>
+                {{> components/home/contents/content/animal MyDataCat}}
+                <button><a href="">More</a></button>
+            </div>
+            <div class="block">
+                <p class="content-box_component_sub_title">DOGS</p>
+                <span></span>
+                {{> components/home/contents/content/animal MyDataDog}}
+                <button><a href="">More</a></button>
+            </div>
+            <div class="block">
+                <p id="block-foods" class="content-box_component_sub_title">FOODS</p>
+                <span></span>
+                {{> components/home/contents/content/animal MyDataFood}}
+                <button><a href="">More</a></button>
+            </div>
+            <div class="block">
+                <p id="block-products" class="content-box_component_sub_title">PRODUCTS</p>
+                <span></span>
+                {{> components/home/contents/content/animal MyDataProduct}}
+                <button><a href="">More</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src = "js/home/content.js"></script>

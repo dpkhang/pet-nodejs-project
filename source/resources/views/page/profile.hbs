@@ -1,0 +1,136 @@
+
+<div class="content">
+    <div class="content__profile">
+        <div class="content__profile_sub content__profile_sub-background">
+            <div class="background"></div>
+            <div class="menu">
+                <ul>
+                    <li><a class="a-hover">Profile</a></li>
+                    <li><a class="a-hover">Cart</a></li>
+                    <li><a class="a-hover">History Shopping</a></li>
+                    <li><a class="a-hover" href="/">Back to main</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content__profile_sub content__profile_sub-content">
+            <div class="content__profile_sub_block content__profile_sub_block-1">
+                <div class="main-1">
+                    <img src="{{avatar}}" alt="">
+                </div>
+                <div class="main-2">
+                    <p>{{username}}</p>
+                    <p></p>
+                    <p>{{full-name}}</p>
+                </div>
+            </div>
+            <div class="content__profile_sub_block content__profile_sub_block-2">
+                <div style="display: none"; id="profile-content-id" class="content__profile_sub_block_main content__profile_sub_block_main-profile">
+                    <p>Profile</p>
+                    <table>
+                        <tr>
+                            <th>Username: </th>
+                            <td>{{username}}</td>
+                        </tr>
+                        <tr>
+                            <th>Email: </th>
+                            <td>{{email}}</td>
+                        </tr>
+                        <tr>
+                            <th>Full name: </th>
+                            <td>{{full-name}}</td>
+                        </tr>
+                        <tr>
+                            <th>Age: </th>
+                            <td>{{age}}</td>
+                        </tr>
+                        <tr>
+                            <th>My Profile: </th>
+                            <td>My Profile</td>
+                        </tr>
+                        <tr>
+                            <th><a id='update-profile-btn'>Update profile</a></th>
+                            <th><a id="change-password-btn">Change password</a></th>
+                        </tr>
+                    </table>
+                </div>
+                <div id = "change-password-content-id" class=" content__profile_sub_block_main  change-password">
+                    <p>Change password</p>
+                    <div class="change-password__content change-password__content-old">
+                        <p>Enter the old password:</p>
+                        <div class="input">
+                            <input type="password" name="old-password" id="">
+                        </div>
+                    </div>
+                     <div class="change-password__content change-password__content-new">
+                        <p>Re-enter password:</p>
+                        <div class="input">
+                            <input type="password" name="new-password" id="">
+                        </div>
+                        <span class="error">404</span>
+                    </div>
+                    <div class="change-password__content change-password__content-new">
+                        <p>Enter new password:</p>
+                        <div class="input">
+                            <input type="password" name="new-password" id="">
+                        </div>
+                        <span class="error">404</span>
+                    </div>
+                    <div class="change-password__content change-password__content-submit">
+                        <input class="change-password__content_element" type="submit" value="Change">
+                        <button class="change-password__content_element" id="change-password-cancel-btn">Cancel</button>
+                    </div>
+                </div>
+                <div id="update-profile-id" class="content__profile_sub_block_main">
+                    <p>Update Profile</p>
+                    <div class="update-profile-div">
+                        <p>Username:</p>
+                        <input type="text" name="" id="">
+                        <p class="error-update">404</p>
+                    </div>
+                    <div class="update-profile-div">
+                        <p>Email:</p>
+                        <input type="email" name="" id="">
+                        <p class="error-update">404</p>
+                    </div>
+                    <div class="update-profile-div">
+                        <p>Avatar: </p>
+                        <input type="file" name="" id="">
+                        <p class="error-update">404</p>
+                    </div>
+                    <div class="update-profile-div">
+                        <p>Full name</p>
+                        <div class="input">
+                            <p>First name:</p>
+                            <input type="text" name="" id="">
+                            <p>Last name:</p>
+                            <input type="text" name="" id="">
+                        </div>
+                        <p class="error-update">404</p>
+                    </div>
+                    <div class="update-profile-div">
+                        <p>Age:</p>
+                        <input type="text" name="" id="">
+                        <p class="error-update">404</p>
+                    </div>
+                    <div class="update-profile-div">
+                        <p>Gender: </p>
+                        <div class="input">
+                            <input type="radio" name="gender" value='Boy' id="">
+                            <span>Boy</span>
+                            <input type="radio" name="gender" value='Girl' id="">
+                            <span>Girl</span>
+                            <input type="radio" name="gender" value='Other' id="">
+                            <span>Other</span>
+                        </div>
+                        <p class="error-update">404</p>
+                    </div>
+                    <div class="update-profile-div">
+                        <input  class="update-profile-div-submit" type="submit" value="">
+                        <button class="update-profile-div-submit">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src = "/js/profile.js"></script>

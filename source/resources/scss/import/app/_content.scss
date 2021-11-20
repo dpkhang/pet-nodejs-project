@@ -1,0 +1,276 @@
+@import "../generate/_font_face.css";
+@import "../generate/animation";
+@import "../generate/variable";
+
+.content-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -4rem;
+    .content-box_component-menu {
+        width: 100%;
+        height: 4rem;
+        position: fixed;
+        top: -5rem;
+        z-index: 10;
+        background-color: #333;
+        .content-box_component-menu_element {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+
+            ul {
+                width: 100%;
+                height: 100%;
+
+                li {
+                    width: 25%;
+                    height: 100%;
+                    float: left;
+                    line-height: 4rem;
+                    text-align: center;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        font-family: CaviarBold;
+                        cursor: pointer;
+                        transition: .5s;
+                        text-shadow: 0 .05rem .1rem #333;
+                        color: orange;
+                    }
+                }
+                li:hover a {
+                    letter-spacing: .3rem;
+                    
+                }
+                li:hover {
+                    border-bottom: .25rem solid orange;
+                }
+            }
+        }
+    }
+    .content-box-component-background{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.2;
+        overflow: hidden;
+        img{
+            width: 40%;
+            height: 80%;
+            float: right;
+            position: relative;
+            right: 4rem;
+        }
+        #content-box-component-img-dog{
+            float: left;
+            width: 40%;
+            height: 80%;
+            top: 15rem;
+            left: 4rem;
+        }
+    }
+    .content-box_component-main {
+        width: 75%;
+        margin: 0 auto;
+        overflow: hidden;
+        .content-box_component_sub-1 {
+            width: 100%;
+            height: 100vh;
+            padding-top: -2rem;
+            .component_sub-1 {
+                width: 55rem;
+                height: 20rem;
+                margin: 2rem;
+                margin-top: 1rem;
+                border-radius: 1.5rem;
+                box-shadow: 0 0 0 .1rem rgb(251, 236, 216),
+                            0 0 0 .15rem rgb(251, 220, 210);
+                .img {
+                    width: 17rem;
+                    height: 17rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    padding: .5rem;
+                    border: .2rem solid $lightblack;
+                    float: left;
+                    margin: 1.5rem;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .content {
+                    width: 60%;
+                    height: 100%;
+                    float: left;
+                    padding-top: .5rem;
+
+                    p {
+                        width: 100%;
+                        height: 20%;
+                        font-size: 1.25rem;
+                        font-family: LobsterTwoBold;
+                        line-height: 3.2rem;
+                    }
+
+                    p:nth-child(1) {
+                        font-size: 1.95rem;
+                    }
+
+                    p:nth-child(2) {
+                        font-size: 1.65rem;
+                        padding-left: 1rem;
+                    }
+
+                    p:nth-child(3) {
+                        font-size: 1.45rem;
+                        padding-left: 1.5rem;
+                    }
+
+                    p:nth-child(4) {
+                        font-size: 1.35rem;
+                        padding-left: 1rem;
+                    }
+                }
+
+            }
+
+            .component_sub-1-cat {
+                position: relative;
+                left: 20%;
+                opacity: .1;
+                border-top-left-radius: 10rem;
+                border-bottom-left-radius: 10rem;
+            }
+
+            .component_sub-1-cat:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 110%;
+                height: 110%;
+                border-radius: 2rem;
+                margin-top: -1rem;
+                margin-left: -1rem;
+                border-top-left-radius: 10rem;
+                border-bottom-left-radius: 10rem;
+                z-index: -1;
+                background: linear-gradient(90deg,rgba(47, 134, 255, 0.5), transparent, transparent);
+            }
+
+            .component_sub-1-dog {
+                position: relative;
+                right: 20%;
+                float: right;
+                opacity: .1;
+                border-top-right-radius: 10rem;
+                border-bottom-right-radius: 10rem;
+                .img {
+                    float: right;
+                }
+
+                .content {
+                    float: right;
+                    text-align: end;
+                    p:nth-child(1) {
+                        font-size: 1.95rem;
+                    }
+
+                    p:nth-child(2) {
+                        font-size: 1.65rem;
+                        padding-right: 1rem;
+                    }
+
+                    p:nth-child(3) {
+                        font-size: 1.45rem;
+                        padding-right: 1.5rem;
+                    }
+
+                    p:nth-child(4) {
+                        font-size: 1.35rem;
+                        padding-right: 1rem;
+                    }
+                }
+            }
+            .component_sub-1-dog:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 110%;
+                height: 110%;
+                border-radius: 2rem;
+                margin-top: -1rem;
+                margin-right: -1rem;
+                z-index: -1;
+                border-top-right-radius: 10rem;
+                border-bottom-right-radius: 10rem;
+                background: linear-gradient(90deg, transparent, transparent, rgba(64, 150, 236, 0.5));
+            }
+        }
+        .content-box_component_sub-2 {
+            width: 100%;
+            .block {
+                width: 100%;
+                clear: both;
+                position: relative;
+                top: 15rem;
+                height: 82rem;
+                opacity: .1;
+                transition: .5s;
+                border-top: .25rem solid #333;
+                margin-top: 3rem;
+                > p {
+                    position: absolute;
+                    top: -2rem;
+                    font-size: 4rem;
+                    background-color: white;
+                    padding: 0 2rem;
+                    width: 25rem;
+                    left: 50%;
+                    text-align: center;
+                    transform: translateX(-50%);
+                    font-family: Dubai;
+                    font-weight: bold;
+                }
+                >span {
+                    display: block;
+                    width: 100%;
+                    height: 6rem;
+                }
+                @import "./contents/animal";
+                >button {
+                    display: block;
+                    width: 12rem;
+                    height: 3rem; 
+                    margin: 0 auto; 
+                    transform: translateY(3rem);
+                    a {
+                        font-size: 1.5rem;
+                        font-family: Caviar;
+                        font-weight: bold;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        line-height: 3rem;
+                    }
+                } 
+            }
+        }
+    }
+}

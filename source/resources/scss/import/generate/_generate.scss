@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+::placeholder {
+    /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+    color: orange;
+    font-family: Calibri;
+    font-size: 1.5rem;
+    opacity: .8;
+    /* Firefox */
+}
